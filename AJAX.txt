@@ -1,0 +1,54 @@
+SYNTAXE AJAX - méthode native 
+
+var xhr, formData;
+
+        xhr = new XMLHttpRequest();
+        formData = new FormData();
+
+        formData.append("id", id);
+        formData.append("mode", mode);
+        formData.append("action", 'put');
+
+        xhr.open('POST', 'mon-api.php');
+
+        xhr.onload = function getResponse(evt) {
+            log('appel ajax ok (POST méthode native)');
+        };
+
+        xhr.onerror = function getError(err) {
+            log('ajax fail');
+            console.error(err);
+        };
+
+        xhr.send(formData);
+    };
+
+l’objet formData.append()
+
+The append() method of the FormData interface appends a new value onto an existing key inside a FormData object, or adds the key if it does not already exist.
+
+formData.append(name, value);
+formData.append(name, value, filename);
+
+
+SYNTAXE AJAX - Jquery
+
+$.ajax({
+  url: "test.html",
+  context: document.body
+}).done(function() {
+  $( this ).addClass( "done" );
+});
+
+var jqxhr = $.ajax( "example.php" )
+  .done(function() {
+    alert( "success" );
+  })
+  .fail(function() {
+    alert( "error" );
+  })
+  .always(function() {
+    alert( "complete" );
+  });
+
+

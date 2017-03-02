@@ -1,0 +1,118 @@
+/* FONTS */
+
+@font-face {
+  font-family: 'Overpass Light';
+  src: url('../assets/type/overpass-webfont/overpass-light.eot'); /* IE9 Compat Modes */
+  src: url('../assets/type/overpass-webfont/overpass-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../assets/type/overpass-webfont/overpass-light.woff2') format('woff2'), /* Super Modern Browsers */ url('../assets/type/overpass-webfont/overpass-light.woff') format('woff'), /* Pretty Modern Browsers */ url('../assets/type/overpass-webfont/overpass-light.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Overpass Regular';
+  src: url('../assets/type/overpass-webfont/overpass-regular.eot'); /* IE9 Compat Modes */
+  src: url('../assets/type/overpass-webfont/overpass-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../assets/type/overpass-webfont/overpass-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../assets/type/overpass-webfont/overpass-regular.woff') format('woff'), /* Pretty Modern Browsers */ url('../assets/type/overpass-webfont/overpass-regular.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Overpass Bold';
+  src: url('../assets/type/overpass-webfont/overpass-bold.eot'); /* IE9 Compat Modes */
+  src: url('../assets/type/overpass-webfont/overpass-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../assets/type/overpass-webfont/overpass-bold.woff2') format('woff2'), /* Super Modern Browsers */ url('../assets/type/overpass-webfont/overpass-bold.woff') format('woff'), /* Pretty Modern Browsers */ url('../assets/type/overpass-webfont/overpass-bold.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Overpass Heavy';
+  src: url('../assets/type/overpass-webfont/overpass-heavy.eot'); /* IE9 Compat Modes */
+  src: url('../assets/type/overpass-webfont/overpass-heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../assets/type/overpass-webfont/overpass-heavy.woff2') format('woff2'), /* Super Modern Browsers */ url('../assets/type/overpass-webfont/overpass-heavy.woff') format('woff'), /* Pretty Modern Browsers */ url('../assets/type/overpass-webfont/overpass-heavy.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+@light: 'Overpass Light';
+@regular: 'Overpass Regular';
+@bold: 'Overpass Bold';
+@heavy: 'Overpass Heavy';
+
+/* STYLES DE TEXTES */
+
+.type-light {
+  font-family: @light, sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.type-regular {
+  font-family: @regular, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.type-regular-uppercase {
+  font-family: @regular, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+}
+
+.type-bold {
+  font-family: @bold, sans-serif;
+  letter-spacing: -0.06em;
+}
+
+.type-heavy {
+  font-family: @heavy, sans-serif;
+  letter-spacing: -0.05em;
+}
+
+/* MA PALETTE DE COULEURS */
+
+@red: #BC0F1B;
+@yellow: #ffca28;
+@darkblue: #000227;
+@deepblue2: #afbedb;
+@deepblue: #000070;
+@darkgrey: #313732;
+@water: #8AA8B0;
+@white: #EDF8FF;
+@grey: #DEDEDE;
+
+/* PROPRIETES FLEX UTILISEES */
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.column {
+  flex-direction:column;
+}
+
+/* MES SEPARATEURS */
+
+.separator-1 {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 7px;
+}
+
+.separator-2 {
+  height: 15px;
+}
+
+.separator-3 {
+  height: 30px;
+}
+
+/* PROPRIETES DU CONTENEUR PRINCIPAL */
+.wrap {
+  width: 100%;
+}
+
+.content {
+  margin: auto;
+  max-width: 1280px;
+  //border : 1px solid red;
+  width: 100%;
+}

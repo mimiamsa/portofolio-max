@@ -1,0 +1,148 @@
+
+#big-wrapper {
+  width: 100%;
+  z-index: -99;
+}
+
+#medium-wrapper {
+  //background: white;
+  .flex;
+  //justify-content: center;
+  flex-direction: column;
+  //border: 1px solid;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.home-video {
+  background-size: cover;
+  position: fixed;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+#small-wrap {
+  header.home-header {
+    width: 100%;
+    background: @deepblue;
+    position: relative;
+    z-index: 4;
+  }
+  nav {
+    .flex;
+    .space-between;
+    width: 100%;
+    padding: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    opacity: 0.5;
+    ul {
+      list-style-type: none;
+      .flex;
+      li {
+        font-size: 0.7em;
+        margin-right: 40px;
+        font-family: @light;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: white;
+          &:hover {
+            opacity: 1;
+          }
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+
+
+.wrapper-call-action {
+  .flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+
+  .call-action {
+    background: @yellow;
+    padding: 15px;
+    position: relative;
+    width: 200px;
+    max-height: 130px;
+    top: 65%;
+    text-align: center;
+    z-index: -1;
+  }
+}
+
+.logo {
+  fill: white;
+  opacity: 0.8;
+  width: 80px;
+  &:hover {
+    opacity: 1;
+  }
+}
+footer.footer-last {
+  width: 100%;
+  height: 200px;
+  background-color: @deepblue2;
+
+}
+
+/*---class pour script js to Fixed----*/
+
+.hidden-nav {
+  position: absolute;
+  background: red;
+  width: 100%;
+  height: 65px;
+  top: 100vh;
+  z-index: 3;
+}
+
+/*-- Parallax property --*/
+
+//html {
+//  overflow: hidden;
+//}
+//
+//#big-wrapper {
+//  overflow-y: auto;
+//  overflow-x: hidden;
+//  -webkit-overflow-scrolling: touch;
+//  -webkit-perspective: 1px;
+//  perspective: 1px;
+//  height: 100vh; //comprend pas //
+//}
+//
+//#medium-wrapper {
+//  transform-style: preserve-3d;
+//  -webkit-transform-style: preserve-3d;
+//}
+//
+//.home-video {
+//  transform: translateZ(-1px) scale(2);
+//}
+//
+//.wrapper-call-action {
+//  transform: translateZ(-0.5px) scale(1.5);
+//}
+//
+//#small-wrap {
+//  position: relative;
+//  z-index: 99;
+//}
