@@ -3,7 +3,7 @@ include '../inc/pdo.php';
 include '../inc/functions.php';
 
 
-define('CHEMIN_IMAGE', 'http://localhost:8888/projet-book-maxou/site-max-3/assets/img/');
+define('CHEMIN_IMAGE', 'http://localhost:8888/Git-project/portfolio-max/assets/img/');
 include '../inc/front-head.php';
 ?>
 <div id="big-wrapper"> <!--équivaut au mon html pour le parallax-->

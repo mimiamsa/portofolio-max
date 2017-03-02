@@ -10,7 +10,7 @@ include 'insert_projet.php';
 
 $projets = bdd_select('SELECT * FROM projet');
 
-define('CHEMIN_IMAGE', 'http://localhost:8888/projet-book-maxou/site-max-3/assets/img/');
+define('CHEMIN_IMAGE', 'http://localhost:8888/Git-project/portfolio-max/assets/img/');
 
 include('../inc/back-head.php');
 ?>
