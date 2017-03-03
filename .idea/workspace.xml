@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5319efcf-68e4-47f9-959f-8460d172970a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/gui_scroller.js" afterPath="$PROJECT_DIR$/js/modules/gui_scroller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/modules/mod-parallax-2.less" afterPath="$PROJECT_DIR$/style/modules/mod-parallax-2.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mod-parallax-2.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mod-parallax-2.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/modules/mod-parallax-2.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,11 +53,31 @@
       <file leaf-file-name="gui_scroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modules/gui_scroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="26" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod-back-form.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style/modules/mod-back-form.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod-backoffice.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style/modules/mod-backoffice.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-825">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,6 +141,7 @@
         <option value="$PROJECT_DIR$/inc/front-head-new.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/style/modules/mod-parallax-2.less" />
+        <option value="$PROJECT_DIR$/js/modules/gui_scroller.js" />
       </list>
     </option>
   </component>
@@ -278,18 +298,18 @@
       <updated>1488455799417</updated>
       <workItem from="1488455801358" duration="2373000" />
       <workItem from="1488468644196" duration="2468000" />
-      <workItem from="1488535431666" duration="1159000" />
+      <workItem from="1488535431666" duration="2671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6000000" />
+    <option name="totallyTimeSpent" value="7512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="117" y="23" width="1229" height="824" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28559393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28559393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -545,14 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/modules/mod-homepage.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/insert_projet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
@@ -561,16 +573,6 @@
             <marker date="1488453818000" expanded="true" signature="162:231" ph="INSERT INTO projet... " />
             <marker date="1488453818000" expanded="true" signature="1186:1229" ph="UPDATE proje... " />
             <marker date="1488453818000" expanded="true" signature="1798:1863" ph="INSERT INTO image... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/gui_scroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -585,10 +587,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style/modules/mod-homepage.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style/modules/mod-parallax-2.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/gui_scroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/modules/mod-back-form.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/modules/mod-backoffice.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-825">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
