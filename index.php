@@ -51,7 +51,8 @@ include 'inc/front-head-new.php';
                 <label for="contact-form" class="label-contact">Par mail :</label>
                 <input type="text" id="sujet" class="contact" placeholder="Sujet">
                 <input type="email" id="mail" class="contact" placeholder="e-mail">
-                <textarea name="message" id="message" class="contact" cols="30" rows="10" placeholder="Votre message..."></textarea>
+                <textarea name="message" id="message" class="contact" cols="30" rows="10"
+                          placeholder="Votre message..."></textarea>
                 <p><input type="submit" class="envoyer" value="Envoyer" id="btn-envoyer"><span id="status"></span></p>
                 <label for="" class="label-contact"> ou par téléphone :<br>06 66 63 22 17</label>
             </form>
@@ -59,14 +60,14 @@ include 'inc/front-head-new.php';
         <?php
         $projets = bdd_select('SELECT * FROM projet ORDER BY id DESC');
         ?>
-        <div class="images-content">
-            <?php foreach ($projets as $projet) { ?>
-                <div class="mini-wrap">
-                    <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"]?>">
-                    <div class="mask"></div>
-                </div>
-            <?php } ?>
-        </div>
+            <div class="images-content">
+                <?php foreach ($projets as $projet) { ?>
+                    <div class="mini-wrap">
+                        <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"] ?>">
+                        <div class="mask"></div>
+                    </div>
+                <?php } ?>
+            </div>
     </div>
 
     <footer class="footer-last"></footer>
