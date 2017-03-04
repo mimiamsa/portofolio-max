@@ -20,12 +20,26 @@ include('../inc/back-head.php');
             <div class="content-insert-projet">
                 <h1 class="form-insert">Ajouter un projet :</h1>
                     <div>
-                        <?php if (isset($error_cover['format'])) { ?> 
+                        <?php if (!empty($error_txt['txt'])) { ?> 
+                            <div class="bo-erreur"><?php echo $error_txt['txt']; ?></div> 
+                        <?php } ?> 
+
+
+                        <?php if (!empty($error_cover['format'])) { ?> 
                             <div class="bo-erreur"><?php echo $error_cover['format']; ?></div> 
                         <?php } ?> 
-                        <?php if (isset($error_cover['taille'])) { ?> 
+                        <?php if (!empty($error_cover['taille'])) { ?> 
                             <div class="bo-erreur"><?php echo $error_cover['taille']; ?></div> 
                         <?php } ?> 
+
+
+                        <?php if (!empty($error_images['format'])) { ?> 
+                            <div class="bo-erreur"><?php echo $error_images['format']; ?></div> 
+                        <?php } ?> 
+                        <?php if (!empty($error_images['taille'])) { ?> 
+                            <div class="bo-erreur"><?php echo $error_images['taille']; ?></div> 
+                        <?php } ?> 
+
                     </div>
                 <form action="backoffice.php" method="post" enctype="multipart/form-data" class="form-insert backoffice">
 
