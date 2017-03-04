@@ -60,16 +60,14 @@ include 'inc/front-head-new.php';
         <?php
         $projets = bdd_select('SELECT * FROM projet ORDER BY id DESC');
         ?>
-            <div class="images-content">
-                <?php foreach ($projets as $projet) { ?>
-                    <div class="mini-wrap">
-                        <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"] ?>">
-                        <div class="mask"></div>
-                    </div>
-                <?php } ?>
-            </div>
+        <div class="images-content">
+            <?php foreach ($projets as $projet) { ?>
+                <div class="mini-wrap">
+                    <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"] ?>">
+                    <div class="mask"></div>
+                </div>
+            <?php } ?>
+            <footer class="footer-last"></footer>
+        </div>
     </div>
-
-    <footer class="footer-last"></footer>
-
 </div>

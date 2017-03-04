@@ -40,22 +40,22 @@ include('../inc/back-head.php');
                         </tr>
 
                         <tr>
-                            <td class="backoffice">
+                            <td class="backoffice" style="vertical-align: top">
                                 <input type="text" name="titre" class="backoffice" placeholder="titre du projet...">
                             </td>
-                            <td class="backoffice">
+                            <td class="backoffice" style="vertical-align: top">
                                 <textarea name="quote" cols="20" rows="6" class="backoffice"
                                           placeholder="explication courte..."></textarea>
                             </td>
-                            <td class="backoffice">
+                            <td class="backoffice" style="vertical-align: top">
                                 <textarea name="txt" cols="20" rows="6" class="backoffice"
                                           placeholder="explication détaillée..."></textarea>
                             </td>
-                            <td class="backoffice">
+                            <td class="backoffice" style="vertical-align: top">
                                 <input type="file" name="cover" id="file" class="backoffice inputfile">
                                 <!--<label for="file">Choose a file</label> <input type="submit" value="ok">-->
                             </td>
-                            <td class="backoffice">
+                            <td class="backoffice" style="vertical-align: top">
                                 <input type="file" name="images_projet[]" multiple>
                                 <!--<label for="file">Choose a file</label>-->
                             </td>
