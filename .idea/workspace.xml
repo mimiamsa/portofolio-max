@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5319efcf-68e4-47f9-959f-8460d172970a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/backoffice.php" afterPath="$PROJECT_DIR$/back/backoffice.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/insert_projet.php" afterPath="$PROJECT_DIR$/back/insert_projet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/modules/mod-backoffice.less" afterPath="$PROJECT_DIR$/style/modules/mod-backoffice.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,12 +62,11 @@
       <file leaf-file-name="insert_projet.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back/insert_projet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="719">
+              <caret line="67" column="9" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="67" selection-end-column="9" />
               <folding>
-                <marker date="1488637336000" expanded="true" signature="273:342" ph="INSERT INTO projet... " />
-                <marker date="1488637336000" expanded="true" signature="1414:1457" ph="UPDATE proje... " />
-                <marker date="1488637336000" expanded="true" signature="2809:2874" ph="INSERT INTO image... " />
+                <marker date="1488637779000" expanded="true" signature="273:342" ph="INSERT INTO projet... " />
+                <marker date="1488637779000" expanded="true" signature="1321:1364" ph="UPDATE proje... " />
               </folding>
             </state>
           </provider>
@@ -333,12 +330,12 @@
       <workItem from="1488535431666" duration="2671000" />
       <workItem from="1488540697337" duration="3504000" />
       <workItem from="1488551722469" duration="1831000" />
-      <workItem from="1488620411168" duration="14456000" />
+      <workItem from="1488620411168" duration="14985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27303000" />
+    <option name="totallyTimeSpent" value="27832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="0" width="1280" height="1024" extended-state="0" />
@@ -419,9 +416,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488637336000" expanded="true" signature="273:342" ph="INSERT INTO projet... " />
-            <marker date="1488637336000" expanded="true" signature="1414:1457" ph="UPDATE proje... " />
-            <marker date="1488637336000" expanded="true" signature="2809:2874" ph="INSERT INTO image... " />
+            <marker date="1488637779000" expanded="true" signature="273:342" ph="INSERT INTO projet... " />
+            <marker date="1488637779000" expanded="true" signature="1321:1364" ph="UPDATE proje... " />
           </folding>
         </state>
       </provider>
@@ -616,9 +612,8 @@
         <state relative-caret-position="285">
           <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding>
-            <marker date="1488637336000" expanded="true" signature="273:342" ph="INSERT INTO projet... " />
-            <marker date="1488637336000" expanded="true" signature="1414:1457" ph="UPDATE proje... " />
-            <marker date="1488637336000" expanded="true" signature="2809:2874" ph="INSERT INTO image... " />
+            <marker date="1488637779000" expanded="true" signature="273:342" ph="INSERT INTO projet... " />
+            <marker date="1488637779000" expanded="true" signature="1321:1364" ph="UPDATE proje... " />
           </folding>
         </state>
       </provider>
@@ -840,12 +835,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/back/insert_projet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="719">
+          <caret line="67" column="9" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="67" selection-end-column="9" />
           <folding>
-            <marker date="1488637336000" expanded="true" signature="273:342" ph="INSERT INTO projet... " />
-            <marker date="1488637336000" expanded="true" signature="1414:1457" ph="UPDATE proje... " />
-            <marker date="1488637336000" expanded="true" signature="2809:2874" ph="INSERT INTO image... " />
+            <marker date="1488637779000" expanded="true" signature="273:342" ph="INSERT INTO projet... " />
+            <marker date="1488637779000" expanded="true" signature="1321:1364" ph="UPDATE proje... " />
           </folding>
         </state>
       </provider>
