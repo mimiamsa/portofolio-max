@@ -9,7 +9,7 @@ include 'inc/front-head-new.php';
 <div id="big-wrapper"> <!--équivaut au mon html pour le parallax-->
 
     <div id="medium-wrapper"> <!--équivaut au parallax-group-->
-        <video class="home-video" src="assets/vids/-compo3_1.mp4"></video>  <!--équivaut au back -->
+        <video class="home-video" src="assets/vids/-compo3_1.mp4" autoplay loop></video>  <!--équivaut au back -->
         <div class="wrapper-call-action"><!--équivaut au mileu -->
             <div class="call-action">
                 <h2>

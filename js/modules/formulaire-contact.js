@@ -11,9 +11,9 @@ define([""], function () {
 
     contactForm.onsubmit = function (e) {
         var statusForm, btnEnvoi, sujet, mail, message;
-        sujet =byId("sujet");
-        mail =byId("mail");
-        message =byId("message");
+        sujet = byId("sujet");
+        mail = byId("mail");
+        message = byId("message");
         statusForm = byId("status");
         btnEnvoi = byId("btn-envoyer");
         btnEnvoi.disabled = true;
@@ -28,9 +28,7 @@ define([""], function () {
         //-> données qui vont être envoyé et à récupérer
 
         var xhr = new XMLHttpRequest();
-        var x = xhr.open("POST", "../ajax-traitement/mon-api.php");
-        log("x");
-        log(x);
+        var x = xhr.open("POST", "ajax-traitement/mon-api.php");
         //-> définit la méthode php et la page php qui doit être lu au moment de l'envoi
 
         xhr.onload = function () {
