@@ -64,7 +64,7 @@ include 'inc/front-head-new.php';
             <?php foreach ($projets as $projet) { ?>
                 <div class="mini-wrap">
                     <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"] ?>">
-                    <div class="mask"></div>
+                    <a href="project.php"><div class="mask"></div></a>
                 </div>
             <?php } ?>
             <footer class="footer-last"></footer>
