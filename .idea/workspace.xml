@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5319efcf-68e4-47f9-959f-8460d172970a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="5319efcf-68e4-47f9-959f-8460d172970a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +30,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="780">
               <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding>
-                <marker date="1488976948000" expanded="true" signature="203:222" ph="SELECT * FRO... images" />
-                <marker date="1488976948000" expanded="true" signature="203:247" ph="SELECT * FRO... image" />
-                <marker date="1488976948000" expanded="true" signature="307:346" ph="SELECT * FRO... projet" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -235,17 +229,18 @@
       <workItem from="1488964271456" duration="861000" />
       <workItem from="1488967245939" duration="9246000" />
       <workItem from="1489138067163" duration="27000" />
+      <workItem from="1489142029643" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47926000" />
+    <option name="totallyTimeSpent" value="48524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1112" y="37" width="1023" height="824" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29969418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3058104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -602,9 +597,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="834">
           <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-          <folding>
-            <marker date="1488969142000" expanded="true" signature="3517:3554" ph="SELECT * FRO... projet" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,11 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <marker date="1488976948000" expanded="true" signature="203:222" ph="SELECT * FRO... images" />
-            <marker date="1488976948000" expanded="true" signature="203:247" ph="SELECT * FRO... image" />
-            <marker date="1488976948000" expanded="true" signature="307:346" ph="SELECT * FRO... projet" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
