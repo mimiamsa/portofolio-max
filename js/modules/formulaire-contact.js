@@ -1,13 +1,32 @@
 /*global requirejs, require, byId, select, log, window, define*/
 define([""], function () {
 
+    var form, contactForm, btnContact;
+    form = byId('form-bigcontainer');
 
-    log('coucou-contact');
 
-    var contactForm;
+    log(form);
+    function close() {
+        log('close');
+        form.classList.remove("show");
+    }
+
+    function displayForm(){
+        log('pipi');
+        form.classList.add("show");
+        var btnclose = select('.btn-close');
+        log(btnclose);
+        btnclose.onclick = close;
+    }
+
+   (function gererClick() {
+        btnContact = byId("contact-btn");
+        log(btnContact);
+        btnContact.onclick = displayForm;
+    })();
+
 
     contactForm = byId("submit-form");
-
 
     contactForm.onsubmit = function (e) {
         var statusForm, btnEnvoi, sujet, mail, message;
@@ -33,11 +52,11 @@ define([""], function () {
 
         xhr.onload = function () {
 
-                contactForm.innerHTML = '<h2>Votre message a été envoyé</h2> <a href="#modal-close"><i class="fa fa-times contact-cross" aria-hidden="true"></i></a>'
+            contactForm.innerHTML = '<h2>Votre message a été envoyé</h2> <a href="#modal-close"><i class="fa fa-times contact-cross" aria-hidden="true"></i></a>'
 
-                statusForm.innerHTML = xhr.responseText;
-                btnEnvoi.disabled = false;
-                //-> si l'envoie n'a pas fonctionner, permet à l'utilisateur de re-appuyer sur le bouton pour re-essayer d'envoyer le message
+            statusForm.innerHTML = xhr.responseText;
+            btnEnvoi.disabled = false;
+            //-> si l'envoie n'a pas fonctionner, permet à l'utilisateur de re-appuyer sur le bouton pour re-essayer d'envoyer le message
 
         }
         e.preventDefault();

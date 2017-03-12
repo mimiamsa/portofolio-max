@@ -38,25 +38,31 @@ include 'inc/front-head-new.php';
                     </svg>
                 </a>
                 <ul class="nav">
-                    <li class="nav-items"><a href="">about</a></li>
-                    <li class="nav-items"><a href="#contact-form">contact</a></li>
+                    <li class="nav-items"><a href="" >about</a></li>
+                    <li class="nav-items" id="contact-btn">contact</li>
                 </ul>
             </nav>
         </header>
         <div id="nav-mobile" class="hidden-nav"></div>
 
-        <div class="modal form-container" id="contact-form">
-            <form action="" method="post" class="modal-container" id="submit-form">
-                <a href="#modal-close"><i class="fa fa-times contact-cross" aria-hidden="true"></i></a>
-                <label for="contact-form" class="label-contact">Par mail :</label>
-                <input type="text" id="sujet" class="contact" placeholder="Sujet">
-                <input type="email" id="mail" class="contact" placeholder="e-mail">
-                <textarea name="message" id="message" class="contact" cols="30" rows="10"
-                          placeholder="Votre message..."></textarea>
-                <p><input type="submit" class="envoyer" value="Envoyer" id="btn-envoyer"><span id="status"></span></p>
-                <label for="" class="label-contact"> ou par téléphone :<br>06 66 63 22 17</label>
-            </form>
+        <div id="form-bigcontainer">
+            <div class="form-container2" id="contact-form">
+                <form action="" method="post" class="container2" id="submit-form">
+                    <i class="fa fa-times contact-cross btn-close" aria-hidden="true"></i>
+                    <label for="contact-form" class="label-contact2">Par mail :</label>
+                    <input type="text" id="sujet" class="contact2" placeholder="Sujet">
+                    <input type="email" id="mail" class="contact2" placeholder="e-mail">
+                    <textarea name="message" id="message" class="contact" cols="30" rows="10"
+                              placeholder="Votre message..."></textarea>
+                    <p><input type="submit" class="envoyer2" value="Envoyer" id="btn-envoyer"><span id="status"></span></p>
+                    <label for="" class="label-contact"> ou par téléphone :<br>06 66 63 22 17</label>
+                </form>
+            </div>
+            <div class="contact-background"></div>
         </div>
+
+
+
         <?php
         $projets = bdd_select('SELECT * FROM projet ORDER BY id DESC');
         ?>
