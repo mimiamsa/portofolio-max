@@ -48,7 +48,7 @@ include 'inc/front-head-new.php';
         <div id="form-bigcontainer">
             <div class="form-container2" id="contact-form">
                 <form action="" method="post" class="container2" id="submit-form">
-                    <i class="fa fa-times contact-cross btn-close" aria-hidden="true"></i>
+                    <i class="fa fa-times contact-cross btn-close" id="btn-close2" aria-hidden="true"></i>
                     <label for="contact-form" class="label-contact2">Par mail :</label>
                     <input type="text" id="sujet" class="contact2" placeholder="Sujet">
                     <input type="email" id="mail" class="contact2" placeholder="e-mail">

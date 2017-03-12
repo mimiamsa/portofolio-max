@@ -1,11 +1,12 @@
 /*global requirejs, require, byId, select, log, window, define*/
 define([""], function () {
 
-    var form, contactForm, btnContact;
+    var form, contactForm, btnContact, btnclose, formHtml;
     form = byId('form-bigcontainer');
+    contactForm = byId("submit-form");
+    formHtml = contactForm.innerHTML;
+    log(formHtml);
 
-
-    log(form);
     function close() {
         log('close');
         form.classList.remove("show");
@@ -14,8 +15,7 @@ define([""], function () {
     function displayForm(){
         log('pipi');
         form.classList.add("show");
-        var btnclose = select('.btn-close');
-        log(btnclose);
+        btnclose = select('.btn-close');
         btnclose.onclick = close;
     }
 
@@ -26,7 +26,6 @@ define([""], function () {
     })();
 
 
-    contactForm = byId("submit-form");
 
     contactForm.onsubmit = function (e) {
         var statusForm, btnEnvoi, sujet, mail, message;
@@ -35,6 +34,8 @@ define([""], function () {
         message = byId("message");
         statusForm = byId("status");
         btnEnvoi = byId("btn-envoyer");
+
+
         btnEnvoi.disabled = true;
         // -> signifie que l'utilisateur ne peut pas appuyer sur le bouton plein de fois et envoyé trop de données
         statusForm.innerHTML = "Please wait";
@@ -51,9 +52,16 @@ define([""], function () {
         //-> définit la méthode php et la page php qui doit être lu au moment de l'envoi
 
         xhr.onload = function () {
+            log(formHtml);
+            contactForm.innerHTML = formHtml + '<p class="sent-message">Votre message a été envoyé</p>';
+            var btnclose2 = byId('btn-close2');
+            // log(btnclose2);
+            btnclose2.addEventListener('click', function(closeEvent) {
+                // log("prout");
+                // log(form);
+                form.classList.remove("show");
 
-            contactForm.innerHTML = '<h2>Votre message a été envoyé</h2> <a href="#modal-close"><i class="fa fa-times contact-cross" aria-hidden="true"></i></a>'
-
+            }, false);
             statusForm.innerHTML = xhr.responseText;
             btnEnvoi.disabled = false;
             //-> si l'envoie n'a pas fonctionner, permet à l'utilisateur de re-appuyer sur le bouton pour re-essayer d'envoyer le message

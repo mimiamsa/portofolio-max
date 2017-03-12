@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5319efcf-68e4-47f9-959f-8460d172970a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/formulaire-contact.js" afterPath="$PROJECT_DIR$/js/modules/formulaire-contact.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/modules/mod-contact.less" afterPath="$PROJECT_DIR$/style/modules/mod-contact.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,30 +22,30 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="57" column="55" lean-forward="false" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
+            <state relative-caret-position="309">
+              <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
               <folding>
-                <marker date="1489329943000" expanded="true" signature="3640:3677" ph="SELECT * FRO... projet" />
+                <marker date="1489333199000" expanded="true" signature="3656:3693" ph="SELECT * FRO... projet" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mod-contact.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mod-contact.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/modules/mod-contact.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="487">
+              <caret line="167" column="22" lean-forward="true" selection-start-line="167" selection-start-column="22" selection-end-line="167" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formulaire-contact.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="formulaire-contact.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/modules/formulaire-contact.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+            <state relative-caret-position="465">
+              <caret line="61" column="46" lean-forward="true" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -97,9 +98,9 @@
         <option value="$PROJECT_DIR$/project.php" />
         <option value="$PROJECT_DIR$/style/modules/mod-project.less" />
         <option value="$PROJECT_DIR$/js/modules/gui_scroller.js" />
-        <option value="$PROJECT_DIR$/js/modules/formulaire-contact.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/style/modules/mod-contact.less" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/modules/formulaire-contact.js" />
       </list>
     </option>
   </component>
@@ -111,8 +112,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1299" />
-    <option name="y" value="46" />
+    <option name="x" value="-1298" />
+    <option name="y" value="49" />
     <option name="width" value="1229" />
     <option name="height" value="824" />
   </component>
@@ -299,15 +300,15 @@
       <workItem from="1488967245939" duration="9246000" />
       <workItem from="1489138067163" duration="27000" />
       <workItem from="1489142029643" duration="598000" />
-      <workItem from="1489327557559" duration="2325000" />
+      <workItem from="1489327557559" duration="5488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50849000" />
+    <option name="totallyTimeSpent" value="54012000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1299" y="46" width="1229" height="824" extended-state="0" />
+    <frame x="-1298" y="49" width="1229" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31086773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -695,28 +696,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/formulaire-contact.js">
+    <entry file="file://$PROJECT_DIR$/style/modules/mod-contact.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+        <state relative-caret-position="487">
+          <caret line="167" column="22" lean-forward="true" selection-start-line="167" selection-start-column="22" selection-end-line="167" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="57" column="55" lean-forward="false" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
+        <state relative-caret-position="309">
+          <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
           <folding>
-            <marker date="1489329943000" expanded="true" signature="3640:3677" ph="SELECT * FRO... projet" />
+            <marker date="1489333199000" expanded="true" signature="3656:3693" ph="SELECT * FRO... projet" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/modules/mod-contact.less">
+    <entry file="file://$PROJECT_DIR$/js/modules/formulaire-contact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="61" column="46" lean-forward="true" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
           <folding />
         </state>
       </provider>

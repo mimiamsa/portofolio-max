@@ -142,9 +142,14 @@ input[type=text].contact2:focus, textarea.contact2:focus, input[type=email].cont
 i.contact-cross {
   position: absolute;
   cursor: pointer;
-  left: 398px;
-  top: -12px;
+  left: 364px;
+  top: 2px;
   color: black;
+  font-size: 1rem;
+  transition:font-size 0.2s ease-in-out;
+  &:hover {
+    font-size: 1.2rem;
+  }
 
 }
 
@@ -155,4 +160,11 @@ i.contact-cross {
   &:hover {
     opacity: 1;
   }
+}
+
+p.sent-message {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 15px;
+  text-align: center;
 }
