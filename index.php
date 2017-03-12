@@ -52,10 +52,10 @@ include 'inc/front-head-new.php';
                     <label for="contact-form" class="label-contact2">Par mail :</label>
                     <input type="text" id="sujet" class="contact2" placeholder="Sujet">
                     <input type="email" id="mail" class="contact2" placeholder="e-mail">
-                    <textarea name="message" id="message" class="contact" cols="30" rows="10"
+                    <textarea name="message" id="message" class="contact2" cols="30" rows="10"
                               placeholder="Votre message..."></textarea>
                     <p><input type="submit" class="envoyer2" value="Envoyer" id="btn-envoyer"><span id="status"></span></p>
-                    <label for="" class="label-contact"> ou par téléphone :<br>06 66 63 22 17</label>
+                    <label for="" class="label-contact2"> ou par téléphone :<br>06 66 63 22 17</label>
                 </form>
             </div>
             <div class="contact-background"></div>
