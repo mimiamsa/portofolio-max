@@ -6,21 +6,17 @@ if (isset($_POST['ajout_projet'])) {
 //    debug($_POST);
     $error_txt = [];
     extract($_POST);
-    if (!empty($_POST['titre']) && !empty($_POST['quote']) && !empty($_POST['txt']) && isset($_FILES['cover']) && $_FILES['cover']['error'] == 0 && !isset($error_cover)) {
+    $emptycover = isset($_FILES['cover']) && $_FILES['cover']['error'] == 0;
+//    debug($_FILES['images_projet']);
+//    $emptyimages = isset($_FILES['cover']) && $_FILES['cover']['error'] == 0
+    if (!empty($_POST['titre']) && !empty($_POST['quote']) && !empty($_POST['txt']) && $emptycover  ) {
         $lastId = bdd_insert('INSERT INTO projet(titre, quote, txt ) VALUES (:titre, :quote, :txt )', [
             'titre' => $titre,
             'quote' => $quote,
             'txt' => $txt
         ]);
 
-//        debug($_FILES['cover']['error']);
-//        if (empty($_FILES["cover"])) {
-//            debug($_FILES['cover']['error']);
-//        }
-//
-//        if (isset($_FILES['cover']) && $_FILES['cover']['error'] == 0) {
         $error_cover = [];
-
 
         if (!in_array($_FILES['cover']['type'], ['image/png', 'image/jpeg'])) {
             $error_cover['format'] = 'Extension de la cover incorrect, png et jpg acceptés.';
@@ -31,7 +27,6 @@ if (isset($_POST['ajout_projet'])) {
         }
 
         if (empty($error_cover)) {
-            echo 'coucou';
             $extension = str_replace('image/', '', $_FILES['cover']['type']);// recupere extension du fichier
             $name = bin2hex(random_bytes(8)) . '.' . $extension;
             if (move_uploaded_file($_FILES['cover']['tmp_name'], '../assets/img/' . $name)) {

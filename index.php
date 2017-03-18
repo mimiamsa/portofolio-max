@@ -69,7 +69,7 @@ include 'inc/front-head-new.php';
         <div class="images-content">
             <?php foreach ($projets as $projet) { ?>
                 <div class="mini-wrap">
-                    <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"] ?>">
+                    <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="img-projet">
                     <a href="project.php?id=<?php echo $projet['id']?>"><div class="mask"></div></a>
                 </div>
             <?php } ?>

@@ -74,7 +74,7 @@ include('../inc/back-head.php');
                                 <!--<label for="file">Choose a file</label>-->
                             </td>
                             <td class="backoffice">
-                                <input type="submit" value="ok" name="ajout_projet" class="backoffice envoyer">
+                                <input type="submit" value="ok" name="ajout_projet" class="backoffice envoyer2">
                             </td>
                         </tr>
                     </table>

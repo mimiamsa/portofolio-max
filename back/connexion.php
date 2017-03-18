@@ -51,7 +51,7 @@ include('../inc/back-head.php');
                 </label>
                 <input class="connect" type="text" name="login" placeholder="login" value="">
                 <input class="form-control connect" type="password" name="password" placeholder="Mot de passe">
-                <input class="connect envoyer" type="submit" value="Connexion">
+                <input class="connect envoyer2" type="submit" value="Connexion">
             </form>
         </div>
     </div>
