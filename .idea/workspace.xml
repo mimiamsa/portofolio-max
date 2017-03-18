@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5319efcf-68e4-47f9-959f-8460d172970a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/insert_projet.php" afterPath="$PROJECT_DIR$/back/insert_projet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/modules/mod-backoffice.less" afterPath="$PROJECT_DIR$/style/modules/mod-backoffice.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,15 +37,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="insert_projet.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="insert_projet.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/insert_projet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="174">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding>
                 <marker date="1489839458000" expanded="true" signature="1388:1457" ph="INSERT INTO projet... " />
                 <marker date="1489839458000" expanded="true" signature="1935:1978" ph="UPDATE proje... " />
                 <marker date="1489839458000" expanded="true" signature="2517:2582" ph="INSERT INTO image... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/view_update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="573">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <marker date="1488539642000" expanded="true" signature="274:308" ph="SELECT * FRO... projet" />
+                <marker date="1488539642000" expanded="true" signature="450:496" ph="SELECT * FRO... image" />
               </folding>
             </state>
           </provider>
@@ -83,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mod-backoffice.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mod-backoffice.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/modules/mod-backoffice.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3045">
-              <caret line="203" column="20" lean-forward="false" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
+            <state relative-caret-position="60">
+              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -125,7 +138,6 @@
         <option value="$PROJECT_DIR$/inc/front-head-new.php" />
         <option value="$PROJECT_DIR$/style/modules/mod-parallax-2.less" />
         <option value="$PROJECT_DIR$/js/modules/gui_scroller.js" />
-        <option value="$PROJECT_DIR$/style/modules/mod-backoffice.less" />
         <option value="$PROJECT_DIR$/back/backoffice.php" />
         <option value="$PROJECT_DIR$/style/modules/mod-contact.less" />
         <option value="$PROJECT_DIR$/js/modules/formulaire-contact.js" />
@@ -133,6 +145,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/project.php" />
         <option value="$PROJECT_DIR$/back/insert_projet.php" />
+        <option value="$PROJECT_DIR$/style/modules/mod-backoffice.less" />
       </list>
     </option>
   </component>
@@ -172,6 +185,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="portfolio-max" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio-max" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio-max" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio-max" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio-max" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,12 +323,12 @@
       <workItem from="1488708200187" duration="1528000" />
       <workItem from="1488880818168" duration="8084000" />
       <workItem from="1488964271456" duration="861000" />
-      <workItem from="1489837352018" duration="2104000" />
+      <workItem from="1489837352018" duration="2875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40757000" />
+    <option name="totallyTimeSpent" value="41528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="0" width="1280" height="1024" extended-state="0" />
@@ -552,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/view_update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/index-essai-6.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -658,14 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/modules/mod-backoffice.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3045">
-          <caret line="203" column="20" lean-forward="false" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/backoffice.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -710,13 +740,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/back/insert_projet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        <state relative-caret-position="174">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
             <marker date="1489839458000" expanded="true" signature="1388:1457" ph="INSERT INTO projet... " />
             <marker date="1489839458000" expanded="true" signature="1935:1978" ph="UPDATE proje... " />
             <marker date="1489839458000" expanded="true" signature="2517:2582" ph="INSERT INTO image... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/view_update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <marker date="1488539642000" expanded="true" signature="274:308" ph="SELECT * FRO... projet" />
+            <marker date="1488539642000" expanded="true" signature="450:496" ph="SELECT * FRO... image" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/modules/mod-backoffice.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
