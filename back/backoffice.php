@@ -19,8 +19,29 @@ include('../inc/back-head.php');
         <div class="content backoffice">
             <div class="content-insert-projet">
                 <h1 class="form-insert">Ajouter un projet :</h1>
-                <div class="content-bo-erreur"></div>
-                <form action="" method="post" enctype="multipart/form-data" class="form-insert backoffice">
+                    <div>
+                        <?php if (!empty($error_txt['txt'])) { ?> 
+                            <div class="bo-erreur"><?php echo $error_txt['txt']; ?></div> 
+                        <?php } ?> 
+
+
+                        <?php if (!empty($error_cover['format'])) { ?> 
+                            <div class="bo-erreur"><?php echo $error_cover['format']; ?></div> 
+                        <?php } ?> 
+                        <?php if (!empty($error_cover['taille'])) { ?> 
+                            <div class="bo-erreur"><?php echo $error_cover['taille']; ?></div> 
+                        <?php } ?> 
+
+
+                        <?php if (!empty($error_images['format'])) { ?> 
+                            <div class="bo-erreur"><?php echo $error_images['format']; ?></div> 
+                        <?php } ?> 
+                        <?php if (!empty($error_images['taille'])) { ?> 
+                            <div class="bo-erreur"><?php echo $error_images['taille']; ?></div> 
+                        <?php } ?> 
+
+                    </div>
+                <form action="backoffice.php" method="post" enctype="multipart/form-data" class="form-insert backoffice">
 
                     <table class="backoffice">
                         <tr>
@@ -33,22 +54,22 @@ include('../inc/back-head.php');
                         </tr>
 
                         <tr>
-                            <td valign="top" class="backoffice">
+                            <td class="backoffice" style="vertical-align: top">
                                 <input type="text" name="titre" class="backoffice" placeholder="titre du projet...">
                             </td>
-                            <td valign="top" class="backoffice">
+                            <td class="backoffice" style="vertical-align: top">
                                 <textarea name="quote" cols="20" rows="6" class="backoffice"
                                           placeholder="explication courte..."></textarea>
-                            </td valign="top">
-                            <td valign="top" class="backoffice">
+                            </td>
+                            <td class="backoffice" style="vertical-align: top">
                                 <textarea name="txt" cols="20" rows="6" class="backoffice"
                                           placeholder="explication détaillée..."></textarea>
                             </td>
-                            <td valign="top" class="backoffice">
-                                <input type="file" name="cover" id="file" class="inputfile" class="backoffice">
+                            <td class="backoffice" style="vertical-align: top">
+                                <input type="file" name="cover" id="file" class="backoffice inputfile">
                                 <!--<label for="file">Choose a file</label> <input type="submit" value="ok">-->
                             </td>
-                            <td valign="top" class="backoffice">
+                            <td class="backoffice" style="vertical-align: top">
                                 <input type="file" name="images_projet[]" multiple>
                                 <!--<label for="file">Choose a file</label>-->
                             </td>
@@ -104,7 +125,7 @@ include('../inc/back-head.php');
                                 <h4>cover</h4>
                                 <div class="separator-1"></div>
                                 <?php if (!empty ($projet['cover'])) { ?>
-                                    <img class="bo-resize" src="<?php echo CHEMIN_IMAGE . $projet['cover']; ?>"/>
+                                    <img class="bo-resize" src="<?php echo CHEMIN_IMAGE . $projet['cover']; ?>" alt="cover"/>
                                 <?php } ?>
                             </li>
 
@@ -119,7 +140,7 @@ include('../inc/back-head.php');
                                 <div class="separator-1"></div>
                                 <?php foreach ($images as $image) { ?>
                                     <?php if (!empty ($image['url_img'])) { ?>
-                                        <img class="bo-resize" src="<?php echo CHEMIN_IMAGE . $image['url_img']; ?>"/>
+                                        <img class="bo-resize" src="<?php echo CHEMIN_IMAGE . $image['url_img']; ?>" alt="images"/>
                                         <a href="delete_projet.php?id_img=<?php echo $image['id']; ?>">
                                             <i class="fa fa-times" aria-hidden="true"></i>
                                         </a>

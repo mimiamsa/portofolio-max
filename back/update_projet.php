@@ -6,7 +6,6 @@ if (!empty($_POST['up_titre'])) {
     extract($_POST);
 //    $erreur = [];
 
-
     bdd_update('UPDATE projet SET titre = :titre WHERE id= :id', [
         'id' => $_POST['id'],
         'titre' => $_POST['up_titre']
