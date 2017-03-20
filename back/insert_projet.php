@@ -10,6 +10,7 @@ if (isset($_POST['ajout_projet'])) {
     $filledImgs = !empty($_FILES["images_projet"]["name"][0]);
 
     if ($filledText && $filledCover && $filledImgs) {
+
         $error_cover = [];
 
         if (!in_array($_FILES['cover']['type'], ['image/png', 'image/jpeg'])) {
@@ -32,7 +33,6 @@ if (isset($_POST['ajout_projet'])) {
                 $error_images['taille'] = 'Les images sont trop lourdes.';
             }
         }
-
 
         if (empty($error_cover) && empty($error_images)) {
 

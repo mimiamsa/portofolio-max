@@ -4,11 +4,21 @@ include 'inc/pdo.php';
 include 'inc/functions.php';
 define('CHEMIN_IMAGE', 'http://localhost:8888/Git-project/portfolio-max/assets/img/');
 include 'inc/front-head-new.php';
+
+$images = bdd_select("SELECT * FROM image WHERE id_projet= :idproj", [
+    'idproj' => $_GET['id']
+]);
+
+$projet = bdd_select("SELECT * FROM projet WHERE id = :idproj ", [
+    'idproj' => $_GET['id']
+]);
+//debug($images[0]['url_img']);
+
 ?>
 
 <div id="small-wrap"><!--équivaut au front -->
 
-    <header id="nav-fix" class="home-header">
+    <header id="nav-fix" class="home-header nav-project">
         <nav>
             <a class="logo" href="">
                 <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1228.3 180.62">
@@ -28,4 +38,23 @@ include 'inc/front-head-new.php';
             </ul>
         </nav>
     </header>
+</div>
+
+
+
+    <div class="first-img-project">
+
+        <img class="img-project-first" src="<?php echo CHEMIN_IMAGE . $images[0]['url_img']; ?>" alt="">
+        <div class="txt-content-project">
+            <div class="title-project"><?php echo $projet[0]['titre']; ?></div>
+            <div class="txt-project"> <?php echo $projet[0]['txt']; ?></div>
+        </div>
+    </div>
+<div class="img-content-project">
+    <?php foreach ($images as $image) {
+        if (!empty ($image['url_img'])) { ?>
+            <img class="img-project" src="<?php echo CHEMIN_IMAGE . $image['url_img']; ?>" alt="">
+        <?php }
+    } ?>
+
 </div>

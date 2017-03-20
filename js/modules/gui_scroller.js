@@ -9,7 +9,7 @@ define(function () {
         contentImg = select('.images-content');
         // log(navToFix);
         // log(navMobile);
-        log(contentImg);
+        // log(contentImg);
         navPosToFix = navToFix.getBoundingClientRect().top;
         navPosMobile = navMobile.getBoundingClientRect().top;
         // log('——position de la nav fix: ' + navPosToFix + " ——position de la nav mobile: " + navPosMobile);
