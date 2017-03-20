@@ -75,7 +75,7 @@ include 'inc/front-head-new.php';
             <?php foreach ($projets as $projet) { ?>
                 <div class="mini-wrap">
                     <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"] ?>">
-                    <a href="project.php">
+                    <a href="project.php?id=<?php echo $projet['id']; ?>">
                         <div class="mask"></div>
                     </a>
                 </div>

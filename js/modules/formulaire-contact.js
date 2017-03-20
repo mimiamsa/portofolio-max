@@ -1,6 +1,8 @@
 /*global requirejs, require, byId, select, log, window, define*/
 define([""], function () {
 
+    log('cici');
+
     var form, contactForm, btnContact, btnclose, formHtml;
     form = byId('form-bigcontainer');
     contactForm = byId("submit-form");
