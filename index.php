@@ -80,7 +80,9 @@ include 'inc/front-head-new.php';
                     </a>
                 </div>
             <?php } ?>
-            <footer class="footer-last"></footer>
+            <?php
+            include 'inc/front-footer.php';
+            ?>
         </div>
     </div>
 </div>

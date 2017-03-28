@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <title>Back office</title>
     <link rel="stylesheet/less" type="text/css" href="../style/main.less">
