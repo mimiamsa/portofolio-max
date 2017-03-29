@@ -79,3 +79,6 @@ $projet = bdd_select("SELECT * FROM projet WHERE id = :idproj ", [
     } ?>
 
 </div>
+<?php
+include 'inc/front-footer.php';
+?>

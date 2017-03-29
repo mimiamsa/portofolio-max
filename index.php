@@ -43,7 +43,7 @@ include 'inc/front-head-new.php';
                 </svg>
                 </a>
                 <ul class="nav">
-                    <li class="nav-items"><a href="" >about</a></li>
+                    <li class="nav-items"><a href="about.php" >about</a></li>
                     <li class="nav-items" id="contact-btn">contact</li>
                 </ul>
             </nav>
