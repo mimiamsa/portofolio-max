@@ -51,13 +51,13 @@ include 'inc/front-head-new.php';
     <div class="curriculum">
         <div class="curriculum-container">
             <div class="curriculum-part">
-                <h2 class="titre"> étude | formation </h2>
+                <h2 class="titre txtniv1"> étude | formation </h2>
                 <p class="curriculum-col">
-                    Juin — 2016<br>
+                    <span class="txtniv1">Juin — 2016</span><br>
                     Diplômé de L’École Nationale<br>
                     supérieure de Paris-Malaquais<br><br>
 
-                    MAI — 2014 <br>
+                    <span class="txtniv1">MAI — 2014</span><br>
                     Participe au workshop <br>
                     international “Chine mutations”<br><br>
 
@@ -65,63 +65,64 @@ include 'inc/front-head-new.php';
                     “Livable Beauty in China” organisé<br>
                     par l’architecte Wang Shu<br><br>
 
-
-                    Avril — 2013<br>
+                    <span class="txtniv1">Avril — 2013</span><br>
                     Participe au workshop<br>
                     européen “Learning center”<br>
                     Paris-Hanovre -Venise<br>
                 </p>
                 <p class="curriculum-col">
-                    SEPTEMBRE — 2009 <br>
+                    <span class="txtniv1">SEPTEMBRE — 2009</span><br>
                     Admission à école d’architecture<br>
                     de Paris Malaquais<br><br>
 
 
-                    SEPTEMBRE — 2008<br>
+                    <span class="txtniv1">SEPTEMBRE — 2008</span><br>
                     Ateliers de Sèvres en classe<br>
                     intermédia – Année préparatoire<br>
                     aux concours d’école d’art<br><br>
 
-                    JUIN — 2007<br>
+                    <span class="txtniv1">JUIN — 2007</span><br>
                     Obtention du baccalauréat ES<br>
                     opt. maths, mention bien<br>
 
                 </p>
             </div>
             <div class="curriculum-part">
-                <h2 class="titre">éxpériences professionnelles</h2>
+                <h2 class="titre txtniv1">éxpériences professionnelles</h2>
                 <p class="curriculum-col">
-                    janvier – 2017 <br>
+                    <span class="txtniv1">janvier – 2017</span> <br>
                     Assistant chez Ten Architecture<br><br>
 
-                    octobre À DÉcembre – 2016<br>
+                    <span class="txtniv1">octobre à déccembre – 2016</span><br>
                     Équipier serveur pour la chaîne<br>
                     de restauration Cojean<br><br>
 
-                    Novembre – 2014 à JUILLet – 2015<br>
+                    <span class="txtniv1">Novembre – 2014 à juillet – 2015</span><br>
                     CDD assistant chez<br>
                     Mac Architecture<br><br>
 
-                    Juillet à sept – 2014<br>
+                    <span class="txtniv1">Juillet à sept – 2014</span><br>
                     Assistant chez Ten Architecture<br>
                 </p>
                 <p class="curriculum-col">
-                    2014 – 2015<br>
+                    <span class="txtniv1">2014 – 2015</span><br>
                     Ponctuellement hôte d’accueil<br>
                     pour galeries d’art, et particuliers<br><br>
 
-                    Janvier À DÉC – 2012<br>
+                    <span class="txtniv1">Janvier à déc – 2012</span><br>
                     Stage chez Ten Architecture<br><br>
 
-                    0ctobre À DÉCembre – 2011<br>
+                    <span class="txtniv1">0ctobre à décembre – 2011</span><br>
                     Stage chez A2RA
                 </p>
             </div>
 
                 <video class="curriculum-video" src="assets/vids/portrait.mp4" autoplay loop></video>
             <div class="curriculum-download">
-                <button class="btn cv">CV.pdf</button>
-                <button class="btn book">portfolio.pdf</button>
+                <button class="btn cv"><i class="fa fa-download" aria-hidden="true"></i>
+                    CV.pdf</button>
+                <button class="btn book"><i class="fa fa-download" aria-hidden="true"></i>
+                    portfolio.pdf</button>
             </div>
         </div>
 
