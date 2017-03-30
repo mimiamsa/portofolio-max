@@ -46,9 +46,9 @@ include 'inc/front-head-new.php';
         </div>
         <div class="contact-background"></div>
     </div>
+    <div class="curriculum-background"></div>
 
     <div class="curriculum">
-        <div class="curriculum-background"></div>
         <div class="curriculum-container">
             <div class="curriculum-part">
                 <h2 class="titre"> étude | formation </h2>
@@ -117,16 +117,17 @@ include 'inc/front-head-new.php';
                     Stage chez A2RA
                 </p>
             </div>
-            <div class="video">
+
                 <video class="curriculum-video" src="assets/vids/portrait.mp4" autoplay loop></video>
+            <div class="curriculum-download">
+                <button class="btn cv">CV.pdf</button>
+                <button class="btn book">portfolio.pdf</button>
             </div>
         </div>
+
     </div>
 
-    <div class="curriculum-download">
-        <button class="cv">CV-max.pdf</button>
-        <button class="book">portfolio-max.pdf</button>
-    </div>
+
 </div>
 <?php
 include 'inc/front-footer.php';
