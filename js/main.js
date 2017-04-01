@@ -13,9 +13,7 @@ requirejs.config({
         module1: 'modules/module-1',
         scroller: 'modules/gui_scroller',
         contactform: 'modules/formulaire-contact',
-        // essai1 : 'modules/essai-update',
-        // essai2 : 'modules/essai-update-2',
-        // essai3 : 'modules/essai-update-3',
+        hidetitle: 'modules/hide-title'
 
     }
 });
@@ -32,13 +30,9 @@ requirejs(["utility", "fontawesome"], function (utility, fontawesome) {
         require(["contactform"], function (contactform) {
         });
     }
-    // require(["essai1"], function (essai1) {
-    // });
-
-    // require(["essai2"], function (essai2) {
-    // });
-    //
-    // require(["essai3"], function (essai3) {
-    // });
-
+    if (byId('hide-title')) {
+        require(["hidetitle"], function (hidetitle) {
+        });
+        log("hide");
+    }
 });

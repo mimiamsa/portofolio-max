@@ -10,8 +10,8 @@ include 'inc/front-head-new.php';
 
     <div id="medium-wrapper"> <!--équivaut au parallax-group-->
         <video class="home-video" src="assets/vids/-compo3_1.mp4" autoplay loop></video>  <!--équivaut au back -->
-        <div class="wrapper-call-action"><!--équivaut au mileu -->
-            <div class="call-action">
+        <div id="hid-call" class="wrapper-call-action"><!--équivaut au mileu -->
+            <div id="hide-title" class="call-action">
                 <h2>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at deleniti dicta
                     eligendi est fuga nemo non nulla numquam obcaecati.

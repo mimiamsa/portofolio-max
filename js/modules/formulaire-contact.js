@@ -1,13 +1,10 @@
 /*global requirejs, require, byId, select, log, window, define*/
 define([""], function () {
 
-    log('cici');
-
     var form, contactForm, btnContact, btnclose, formHtml;
     form = byId('form-bigcontainer');
     contactForm = byId("submit-form");
     formHtml = contactForm.innerHTML;
-    log(formHtml);
 
     function close() {
         log('close');
@@ -27,9 +24,7 @@ define([""], function () {
         btnContact.onclick = displayForm;
     })();
 
-
-
-    contactForm.onsubmit = function (e) {
+  contactForm.onsubmit = function (e) {
         var statusForm, btnEnvoi, sujet, mail, message;
         sujet = byId("sujet");
         mail = byId("mail");
