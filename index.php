@@ -17,6 +17,8 @@ include 'inc/front-head-new.php';
                     eligendi est fuga nemo non nulla numquam obcaecati.
                 </h2>
             </div>
+            <i class="fa fa-arrow-down arrow-down fa-2x" aria-hidden="true"></i>
+
         </div>
     </div>
 

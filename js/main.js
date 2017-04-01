@@ -13,7 +13,8 @@ requirejs.config({
         module1: 'modules/module-1',
         scroller: 'modules/gui_scroller',
         contactform: 'modules/formulaire-contact',
-        hidetitle: 'modules/hide-title'
+        hidetitle: 'modules/hide-title',
+        scrollto: 'modules/scroll_to'
 
     }
 });
@@ -35,4 +36,11 @@ requirejs(["utility", "fontawesome"], function (utility, fontawesome) {
         });
         log("hide");
     }
+
+    if (byId('nav-fix')) {
+        require(["scrollto"], function (scrollto) {
+        });
+        log("scrollto");
+    }
+
 });
