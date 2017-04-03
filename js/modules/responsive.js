@@ -15,13 +15,13 @@ define(["jquery"], function ($) {
         // log(navmobile);
         width = document.documentElement.clientWidth;
         log(width);
-        if(width <= 768) {
+        if(width <= 767) {
             log("grand");
             navResponsive.classList.add("nav-project");
             navmobile.classList.add("nav-responsive");
             // navmobile.style.display = "none";
 
-        } if(width > 768) {
+        } if(width > 767) {
             navResponsive.classList.remove("nav-project");
             navmobile.classList.remove("nav-responsive");
         }
