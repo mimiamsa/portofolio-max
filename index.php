@@ -50,7 +50,7 @@ include 'inc/front-head-new.php';
                 </ul>
             </nav>
         </header>
-        <div id="nav-mobile" class="hidden-nav"></div>
+        <div id="nav-mobile" class="hidden-nav nav-responsive"></div>
 
         <div id="form-bigcontainer">
             <div class="form-container2" id="contact-form">

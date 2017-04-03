@@ -14,7 +14,8 @@ requirejs.config({
         scroller: 'modules/gui_scroller',
         contactform: 'modules/formulaire-contact',
         hidetitle: 'modules/hide-title',
-        scrollto: 'modules/scroll_to'
+        scrollto: 'modules/scroll_to',
+        responsive: "modules/responsive"
 
     }
 });
@@ -41,6 +42,8 @@ requirejs(["utility", "fontawesome"], function (utility, fontawesome) {
         require(["scrollto"], function (scrollto) {
         });
         log("scrollto");
+        require(["responsive"], function (responsive) {
+        });
     }
 
 });

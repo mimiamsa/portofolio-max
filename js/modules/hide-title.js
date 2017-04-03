@@ -5,13 +5,13 @@ define([""], function () {
     var elHideContainer, height, title, arrow;
     title = byId('hide-title');
     arrow = select('.arrow-down');
-    log(arrow);
+    // log(arrow);
     elHideContainer = byId('hid-call');
     log(elHideContainer);
 
     window.setTimeout(function () {
         height = elHideContainer.scrollHeight;
-        log(height);
+        // log(height);
     }, 100);
 
     function opacityScroll() {
@@ -31,9 +31,8 @@ define([""], function () {
         }
     }
 
-    (function ecouteScrollCall() {
-        window.addEventListener('scroll', opacityScroll, false);
-    })();
+
+
 
     // function vanishElement() {
     //     var elToHide, elPosition;
