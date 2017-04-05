@@ -78,7 +78,7 @@ include 'inc/front-head-new.php';
                     <span class="txtniv1">Avril — 2013</span><br>
                     Participe au workshop<br>
                     européen “Learning center”<br>
-                    Paris-Hanovre -Venise<br>
+                    Paris-Hanovre -Venise<br><br>
                 </p>
                 <p class="curriculum-col">
                     <span class="txtniv1">SEPTEMBRE — 2009</span><br>
@@ -112,7 +112,7 @@ include 'inc/front-head-new.php';
                     Mac Architecture<br><br>
 
                     <span class="txtniv1">Juillet à sept – 2014</span><br>
-                    Assistant chez Ten Architecture<br>
+                    Assistant chez Ten Architecture<br><br>
                 </p>
                 <p class="curriculum-col">
                     <span class="txtniv1">2014 – 2015</span><br>
