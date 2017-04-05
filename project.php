@@ -44,14 +44,15 @@ $projet = bdd_select("SELECT * FROM projet WHERE id = :idproj ", [
                 <li class="nav-items" id="contact-btn">contact</li>
             </ul>
             <div id="burger-responsive">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="item bar1"></div>
+                <div class="item bar2"></div>
+                <div class="item bar3"></div>
             </div>
         </nav>
+        <ul id="nav-responsive">
+            <li class="nav-items"><a href="about.php">about</a></li>
+            <li class="nav-items" id="contact-btn">contact</li>
+        </ul>
     </header>
     <div id="form-bigcontainer">
         <div class="form-container2" id="contact-form">

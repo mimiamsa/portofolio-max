@@ -4,8 +4,19 @@ define(["jquery"], function ($) {
     var navResponsive, i;
     navResponsive = byId("nav-fix");
 
-    function displayInfo(e) {
-        
+
+    function displayInfos(e) {
+        var maskToDisplay, maskCloseBtn;
+        maskToDisplay = this.parentElement.querySelector(".images-content .mask");
+        log(maskToDisplay);
+        maskToDisplay.classList.add("responsive-mask");
+    }
+
+    function closeMask(e) {
+        log(this);
+        var maskToHide;
+        maskToHide = this.parentElement;
+       maskToHide.classList.remove("responsive-mask");
     }
 
     function burgerChangeState(e) {
@@ -42,6 +53,14 @@ define(["jquery"], function ($) {
             navmobile.classList.remove("nav-responsive");
         }
     }
+
+    (function ecouterClickCloseMore() {
+        var closeMoreBtn;
+        closeMoreBtn = selectAll(".responsive-cross-content");
+        for(i= 0; i < closeMoreBtn.length; i+=1) {
+            closeMoreBtn[i].onclick = closeMask;
+        }
+    })();
 
     (function ecouteClickMore(){
         var moreBtn;

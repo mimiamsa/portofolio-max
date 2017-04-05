@@ -87,10 +87,17 @@ include 'inc/front-head-new.php';
         <div class="images-content">
             <?php foreach ($projets as $projet) { ?>
                 <div class="mini-wrap">
-                    <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"] ?>">
                     <a href="project.php?id=<?php echo $projet['id']; ?>">
-                        <div class="mask"></div>
+                        <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"] ?>">
                     </a>
+                    <div class="mask">
+                        <div class="responsive-cross-content">
+                            <img class="responsive-cross" src="assets/svg/cross.svg" alt="">
+                        </div>
+
+                        <a class="responsive-masklink" href="project.php?id=<?php echo $projet['id']; ?>"></a>
+                    </div>
+
                     <div class="bouton-titre">
                         <img src="assets/svg/plus.svg" alt="">
                     </div>
