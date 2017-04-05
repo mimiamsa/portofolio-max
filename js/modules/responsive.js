@@ -1,13 +1,25 @@
 define(["jquery"], function ($) {
 
     log("responsive");
-    var navResponsive;
+    var navResponsive, i;
     navResponsive = byId("nav-fix");
 
+    function displayInfo(e) {
+        
+    }
+
     function burgerChangeState(e) {
-        var navfullscreen;
+        var navfullscreen, bar1, bar2, bar3;
+
+            bar1 = select(".bar1");
+            bar3 = select(".bar3");
+            bar2 = select(".bar2");
+            log(bar2);
+            bar1.classList.toggle("croix");
+            bar3.classList.toggle("croix");
+            bar2.classList.toggle("croix");
+
         navfullscreen = byId('nav-responsive');
-        this.classList.toggle('open');
         navResponsive.classList.toggle('open');
         navfullscreen.classList.toggle('open');
     }
@@ -31,6 +43,14 @@ define(["jquery"], function ($) {
         }
     }
 
+    (function ecouteClickMore(){
+        var moreBtn;
+        moreBtn = selectAll(".bouton-titre");
+        for(i= 0; i < moreBtn.length; i+=1) {
+            moreBtn[i].onclick = displayInfos;
+        }
+
+    })();
 
     (function ecouterClickBurger() {
         var burgerResponsive;

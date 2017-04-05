@@ -47,7 +47,7 @@
                 </li>
             </ul>
         </li>
-        <li class="footer-item">copyright <br> Max Allix 2017 </li>
-        <li class="footer-item">me contacter : <br> contact@maxallix.com <br> 06 66 67 22 17</li>
+        <li class="footer-item"><p>copyright <br> Max Allix 2017</p> </li>
+        <li class="footer-item"><p>me contacter : <br> contact@maxallix.com <br> 06 66 67 22 17</p></li>
     </ul>
 </footer>

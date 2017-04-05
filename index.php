@@ -51,12 +51,9 @@ include 'inc/front-head-new.php';
                     <li class="nav-items" id="contact-btn">contact</li>
                 </ul>
                 <div id="burger-responsive">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="item bar1"></div>
+                    <div class="item bar2"></div>
+                    <div class="item bar3"></div>
                 </div>
 
             </nav>
@@ -95,7 +92,7 @@ include 'inc/front-head-new.php';
                         <div class="mask"></div>
                     </a>
                     <div class="bouton-titre">
-
+                        <img src="assets/svg/plus.svg" alt="">
                     </div>
                 </div>
             <?php } ?>
