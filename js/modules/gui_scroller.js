@@ -13,7 +13,7 @@ define(function () {
         // log(contentImg);
         navPosToFix = navToFix.getBoundingClientRect().top;
         navPosMobile = navMobile.getBoundingClientRect().top;
-        log('——position de la nav fix: ' + navPosToFix + " ——position de la nav mobile: " + navPosMobile);
+        // log('——position de la nav fix: ' + navPosToFix + " ——position de la nav mobile: " + navPosMobile);
         if (navPosToFix <= 0) {
             navToFix.style.position = 'fixed';
             navToFix.style.top = "0"; //add class avec top 0

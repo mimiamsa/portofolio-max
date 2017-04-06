@@ -6,29 +6,38 @@ define(["jquery"], function ($) {
 
 
     function displayInfos(e) {
-        var maskToDisplay, maskCloseBtn;
-        maskToDisplay = this.parentElement.querySelector(".images-content .mask");
+        var maskToDisplay, maskCloseBtn, plusToCross, parent;
+        parent = this.parentElement;
+        // maskToDisplay = this.parentElement.querySelector(".mask");
+        while (!parent.classList.contains("mini-wrap")) {
+            parent = parent.parentElement;
+        }
+        maskToDisplay = parent.querySelector(".mask");
+        plusToCross = this.children[0];
+        log(plusToCross);
         log(maskToDisplay);
-        maskToDisplay.classList.add("responsive-mask");
+        this.classList.toggle('remove-shadow');
+        maskToDisplay.classList.toggle("responsive-mask");
+        plusToCross.classList.toggle("close");
     }
 
-    function closeMask(e) {
-        log(this);
-        var maskToHide;
-        maskToHide = this.parentElement;
-       maskToHide.classList.remove("responsive-mask");
-    }
+    // function closeMask(e) {
+    //     log(this);
+    //     var maskToHide;
+    //     maskToHide = this.parentElement;
+    //    maskToHide.classList.remove("responsive-mask");
+    // }
 
     function burgerChangeState(e) {
         var navfullscreen, bar1, bar2, bar3;
 
-            bar1 = select(".bar1");
-            bar3 = select(".bar3");
-            bar2 = select(".bar2");
-            log(bar2);
-            bar1.classList.toggle("croix");
-            bar3.classList.toggle("croix");
-            bar2.classList.toggle("croix");
+        bar1 = select(".bar1");
+        bar3 = select(".bar3");
+        bar2 = select(".bar2");
+        log(bar2);
+        bar1.classList.toggle("croix");
+        bar3.classList.toggle("croix");
+        bar2.classList.toggle("croix");
 
         navfullscreen = byId('nav-responsive');
         navResponsive.classList.toggle('open');
@@ -54,18 +63,18 @@ define(["jquery"], function ($) {
         }
     }
 
-    (function ecouterClickCloseMore() {
-        var closeMoreBtn;
-        closeMoreBtn = selectAll(".responsive-cross-content");
-        for(i= 0; i < closeMoreBtn.length; i+=1) {
-            closeMoreBtn[i].onclick = closeMask;
-        }
-    })();
+    // (function ecouterClickCloseMore() {
+    //     var closeMoreBtn;
+    //     closeMoreBtn = selectAll(".responsive-cross-content");
+    //     for(i= 0; i < closeMoreBtn.length; i+=1) {
+    //         closeMoreBtn[i].onclick = closeMask;
+    //     }
+    // })();
 
-    (function ecouteClickMore(){
+    (function ecouteClickMore() {
         var moreBtn;
         moreBtn = selectAll(".bouton-titre");
-        for(i= 0; i < moreBtn.length; i+=1) {
+        for (i = 0; i < moreBtn.length; i += 1) {
             moreBtn[i].onclick = displayInfos;
         }
 
