@@ -1,0 +1,63 @@
+@media screen and (max-width: 399px) {
+  #form-bigcontainer {
+    .form-container2 {
+      width: 100%;
+      max-width: 100%;
+      form#submit-form {
+        label {
+          display: none;
+        }
+        .btn-close {
+          width: 25px;
+          margin-bottom: 25px;
+        }
+        .envoyer2{
+          font-size: 0.9rem;
+        }
+
+        textarea {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .contact-background {
+      background: @deepblue;
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 579px) and (orientation: landscape) {
+
+
+  #form-bigcontainer {
+    .form-container2 {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px 30px 30px 30px;
+      form#submit-form {
+        .btn-close {
+          margin: 8px 0 14px 0;
+          width: 24px;
+        }
+        label {
+          display: none;
+        }
+        input#mail, input#sujet {
+          margin-bottom: 10px;
+          padding: 9px;
+        }
+        textarea {
+          margin-bottom: 14px;
+        }
+        .envoyer2{
+          font-size: 0.85rem;
+        }
+      }
+    }
+    .contact-background {
+      background: @deepblue;
+      opacity: 1;
+    }
+  }
+}

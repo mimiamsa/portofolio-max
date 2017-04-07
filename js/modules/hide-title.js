@@ -6,11 +6,11 @@ define([""], function () {
     title = byId('hide-title');
     arrow = select('.arrow-down');
     elHideContainer = byId('hid-call');
-    log(elHideContainer);
+    // log(elHideContainer);
 
     window.setTimeout(function () {
         height = elHideContainer.scrollHeight;
-        log(height);
+        // log(height);
     }, 100);
 
     function opacityScroll() {

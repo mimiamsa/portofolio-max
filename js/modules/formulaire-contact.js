@@ -1,30 +1,34 @@
 /*global requirejs, require, byId, select, log, window, define*/
 define([""], function () {
 
-    var form, contactForm, btnContact, btnclose, formHtml;
+    var form, contactForm, btnContact, btnclose, formHtml, i;
     form = byId('form-bigcontainer');
     contactForm = byId("submit-form");
     formHtml = contactForm.innerHTML;
 
     function close() {
-        log('close');
+        // log('close');
         form.classList.remove("show");
     }
 
-    function displayForm(){
-        log('pipi');
+    function displayForm() {
+        log('yo');
         form.classList.add("show");
-        btnclose = select('.btn-close');
-        btnclose.onclick = close;
+        btnclose = selectAll('.btn-close');
+        for(i=0; i < btnclose.length; i+=1 ){
+            btnclose[i].onclick = close;
+        }
     }
 
-   (function gererClick() {
-        btnContact = byId("contact-btn");
-        log(btnContact);
-        btnContact.onclick = displayForm;
+    (function gererClick() {
+        btnContact = selectAll(".contact-btn");
+        for (i=0; i< btnContact.length ; i+=1) {
+            btnContact[i].onclick = displayForm;
+        }
     })();
 
-  contactForm.onsubmit = function (e) {
+
+    contactForm.onsubmit = function (e) {
         var statusForm, btnEnvoi, sujet, mail, message;
         sujet = byId("sujet");
         mail = byId("mail");
@@ -53,7 +57,7 @@ define([""], function () {
             contactForm.innerHTML = formHtml + '<p class="sent-message">Votre message a été envoyé</p>';
             var btnclose2 = byId('btn-close2');
             // log(btnclose2);
-            btnclose2.addEventListener('click', function(closeEvent) {
+            btnclose2.addEventListener('click', function (closeEvent) {
                 // log("prout");
                 // log(form);
                 form.classList.remove("show");

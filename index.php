@@ -48,7 +48,7 @@ include 'inc/front-head-new.php';
                 </a>
                 <ul class="nav">
                     <li class="nav-items"><a href="about.php">about</a></li>
-                    <li class="nav-items" id="contact-btn">contact</li>
+                    <li class="nav-items contact-btn">contact</li>
                 </ul>
                 <div id="burger-responsive">
                     <div class="item bar1"></div>
@@ -59,7 +59,7 @@ include 'inc/front-head-new.php';
             </nav>
             <ul id="nav-responsive">
                 <li class="nav-items"><a href="about.php">about</a></li>
-                <li class="nav-items" id="contact-btn">contact</li>
+                <li class="nav-items contact-btn">contact</li>
             </ul>
         </header>
         <div id="nav-mobile" class="hidden-nav nav-responsive"></div>
@@ -67,11 +67,12 @@ include 'inc/front-head-new.php';
         <div id="form-bigcontainer">
             <div class="form-container2" id="contact-form">
                 <form action="" method="post" class="container2" id="submit-form">
-                    <i class="fa fa-times contact-cross btn-close" id="btn-close2" aria-hidden="true"></i>
+                    <img src="assets/svg/cross-white.svg" class="contact-cross btn-close"  id="btn-close2" alt="cross">
+<!--                    <i class="fa fa-times contact-cross btn-close" id="btn-close2" aria-hidden="true"></i>-->
                     <label for="contact-form" class="label-contact2">Par mail :</label>
                     <input type="text" id="sujet" class="contact2" placeholder="Sujet">
                     <input type="email" id="mail" class="contact2" placeholder="e-mail">
-                    <textarea name="message" id="message" class="contact2" cols="30" rows="10"
+                    <textarea name="message" id="message" class="contact2" cols="30" rows="9"
                               placeholder="Votre message..."></textarea>
                     <p><input type="submit" class="envoyer2" value="Envoyer" id="btn-envoyer"><span id="status"></span>
                     </p>
