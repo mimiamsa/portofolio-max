@@ -21,7 +21,7 @@ $projet = bdd_select("SELECT * FROM projet WHERE id = :idproj ", [
     <header id="nav-fix" class="home-header nav-project">
         <nav>
             <a class="logo" href="index.php">
-                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 968 170.3"
                      xml:space="preserve">
                     <path d="M244.6,55.7c-2-4.9-4.4-12.2-5.6-17.3c-1.5,5.1-3.9,12.4-5.6,17.3l-19,51.1h48.9L244.6,55.7z M272.6,133h-67.4l-13.4,37.2
@@ -41,7 +41,7 @@ $projet = bdd_select("SELECT * FROM projet WHERE id = :idproj ", [
             </a>
             <ul class="nav">
                 <li class="nav-items"><a href="">about</a></li>
-                <li class="nav-items" id="contact-btn">contact</li>
+                <li class="nav-items contact-btn">contact</li>
             </ul>
             <div id="burger-responsive">
                 <div class="item bar1"></div>
@@ -51,20 +51,21 @@ $projet = bdd_select("SELECT * FROM projet WHERE id = :idproj ", [
         </nav>
         <ul id="nav-responsive">
             <li class="nav-items"><a href="about.php">about</a></li>
-            <li class="nav-items" id="contact-btn">contact</li>
+            <li class="nav-items contact-btn">contact</li>
         </ul>
     </header>
     <div id="form-bigcontainer">
         <div class="form-container2" id="contact-form">
-            <form action="" method="post" class="container2" id="submit-form">
-                <i class="fa fa-times contact-cross btn-close" id="btn-close2" aria-hidden="true"></i>
-                <label for="contact-form" class="label-contact2">Par mail :</label>
+            <form action="#" method="post" class="container2" id="submit-form">
+                <img src="assets/svg/cross-white.svg" class="contact-cross btn-close"  id="btn-close2" alt="cross">
+                <span class="label-contact2">Par mail :</span>
                 <input type="text" id="sujet" class="contact2" placeholder="Sujet">
                 <input type="email" id="mail" class="contact2" placeholder="e-mail">
-                <textarea name="message" id="message" class="contact2" cols="30" rows="10"
+                <textarea name="message" id="message" class="contact2" cols="30" rows="9"
                           placeholder="Votre message..."></textarea>
-                <p><input type="submit" class="envoyer2" value="Envoyer" id="btn-envoyer"><span id="status"></span></p>
-                <label for="" class="label-contact2"> ou par téléphone :<br>06 66 63 22 17</label>
+                <p><input type="submit" class="envoyer2" value="Envoyer" id="btn-envoyer"><span id="status"></span>
+                </p>
+                <span class="label-contact2"> ou par téléphone :<br>06 66 63 22 17</span>
             </form>
         </div>
         <div class="contact-background"></div>
@@ -77,7 +78,7 @@ $projet = bdd_select("SELECT * FROM projet WHERE id = :idproj ", [
     <img class="img-project-first" src="<?php echo CHEMIN_IMAGE . $images[0]['url_img']; ?>" alt="">
     <div class="txt-content-project">
         <div class="title-project"><?php echo $projet[0]['titre']; ?></div>
-        <div class="txt-project"> <?php echo $projet[0]['txt']; ?></div>
+        <div class="txt-project"> <?php echo nl2br($projet[0]['txt']) ; ?></div>
     </div>
 </div>
 <div class="img-content-project">

@@ -7,7 +7,7 @@ include 'inc/front-head-new.php';
     <header id="nav-fix" class="home-header nav-about">
         <nav>
             <a class="logo" href="index.php">
-                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 968 170.3"
                      xml:space="preserve">
                     <path d="M244.6,55.7c-2-4.9-4.4-12.2-5.6-17.3c-1.5,5.1-3.9,12.4-5.6,17.3l-19,51.1h48.9L244.6,55.7z M272.6,133h-67.4l-13.4,37.2
@@ -44,15 +44,16 @@ include 'inc/front-head-new.php';
     </header>
     <div id="form-bigcontainer">
         <div class="form-container2" id="contact-form">
-            <form action="" method="post" class="container2" id="submit-form">
+            <form action="#" method="post" class="container2" id="submit-form">
                 <img src="assets/svg/cross-white.svg" class="contact-cross btn-close"  id="btn-close2" alt="cross">
-                <label for="contact-form" class="label-contact2">Par mail :</label>
+                <span class="label-contact2">Par mail :</span>
                 <input type="text" id="sujet" class="contact2" placeholder="Sujet">
                 <input type="email" id="mail" class="contact2" placeholder="e-mail">
                 <textarea name="message" id="message" class="contact2" cols="30" rows="9"
                           placeholder="Votre message..."></textarea>
-                <p><input type="submit" class="envoyer2" value="Envoyer" id="btn-envoyer"><span id="status"></span></p>
-                <label for="" class="label-contact2"> ou par téléphone :<br>06 66 63 22 17</label>
+                <p><input type="submit" class="envoyer2" value="Envoyer" id="btn-envoyer"><span id="status"></span>
+                </p>
+                <span class="label-contact2"> ou par téléphone :<br>06 66 63 22 17</span>
             </form>
         </div>
         <div class="contact-background"></div>
@@ -61,8 +62,8 @@ include 'inc/front-head-new.php';
 
     <div class="curriculum">
         <div class="curriculum-container">
+            <h2 class="titre txtniv1"> étude | formation </h2>
             <div class="curriculum-part">
-                <h2 class="titre txtniv1"> étude | formation </h2>
                 <p class="curriculum-col">
                     <span class="txtniv1">Juin — 2016</span><br>
                     Diplômé de L’École Nationale<br>
@@ -97,10 +98,11 @@ include 'inc/front-head-new.php';
                     opt. maths, mention bien<br>
 
                 </p>
-                <div class="about-filet"></div>
             </div>
+
+            <h2 class="titre txtniv1">éxpériences professionnelles</h2>
+
             <div class="curriculum-part">
-                <h2 class="titre txtniv1">éxpériences professionnelles</h2>
                 <p class="curriculum-col">
                     <span class="txtniv1">janvier – 2017</span> <br>
                     Assistant chez Ten Architecture<br><br>
@@ -129,13 +131,17 @@ include 'inc/front-head-new.php';
                 </p>
             </div>
 
-                <video class="curriculum-video" src="assets/vids/portrait.mp4" autoplay loop></video>
-            <div class="curriculum-download">
-                <button class="btn cv"><i class="fa fa-download" aria-hidden="true"></i>
-                    CV.pdf</button>
-                <button class="btn book"><i class="fa fa-download" aria-hidden="true"></i>
-                    portfolio.pdf</button>
             </div>
+
+        <div class="curriculum-media">
+            <video class="curriculum-video" autoplay loop>
+                <source src="assets/vids/looportrait_1.mp4" type="video/mp4">
+                <source src="assets/vids/looportrait_1.webm" type="video/webm">
+            </video>
+            <button class="btn cv"><i class="fa fa-download" aria-hidden="true"></i>
+                CV</button>
+            <button class="btn book"><i class="fa fa-download" aria-hidden="true"></i>
+                portfolio</button>
         </div>
 
     </div>

@@ -25,7 +25,7 @@ requirejs(["utility", "fontawesome"], function (utility, fontawesome) {
 
     if (byId('nav-mobile')) {
         require(["scroller"], function (scroller) {
-            log(scroller)
+            // log(scroller)
         });
     }
     if (byId('contact-form')) {
@@ -38,12 +38,21 @@ requirejs(["utility", "fontawesome"], function (utility, fontawesome) {
         log("hide");
     }
 
-    if (byId('nav-fix')) {
+    if (byId('nav-fix') && byId('big-wrapper')) {
         require(["scrollto"], function (scrollto) {
         });
         log("scrollto");
+
+    }
+    if (byId("small-wrap")) {
         require(["responsive"], function (responsive) {
+
+            // window.addEventListener('load', function(){
+            //     log("coucou");
+            // }, false);
+
         });
     }
+
 
 });

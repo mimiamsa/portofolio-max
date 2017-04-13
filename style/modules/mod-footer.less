@@ -1,7 +1,7 @@
 footer.front-footer {
   width: 100%;
-  background: @grey;
-  padding: 50px;
+  background: @white;
+  padding: 30px;
 
   .footer-container {
     .flex;
@@ -10,6 +10,10 @@ footer.front-footer {
     .footer-item {
       color: @deepblue2;
       text-align: center;
+      &:last-child {
+        pointer-events: none;
+      }
+
       p {
         font-size: 0.9rem;
         font-family: @light;
@@ -27,7 +31,11 @@ footer.front-footer {
           }
           svg {
             fill:@deepblue2;
-            transition: 0.3s fill ease-in-out;
+            -webkit-transition: fill 0.3s ease-in-out;
+            -moz-transition: fill 0.3s ease-in-out;
+            -ms-transition: fill 0.3s ease-in-out;
+            -o-transition: fill 0.3s ease-in-out;
+            transition: fill 0.3s ease-in-out;
             &:hover {
               fill: @deepblue;
             }

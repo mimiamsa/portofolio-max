@@ -6,29 +6,31 @@ include 'inc/functions.php';
 define('CHEMIN_IMAGE', 'http://localhost:8888/Git-project/portfolio-max/assets/img/');
 include 'inc/front-head-new.php';
 ?>
-<div id="big-wrapper"> <!--équivaut au mon html pour le parallax-->
+<div id="big-wrapper">
 
-    <div id="medium-wrapper"> <!--équivaut au parallax-group-->
-        <video class="home-video" src="assets/vids/-compo3_1.mp4" autoplay loop></video>  <!--équivaut au back -->
-        <div id="hid-call" class="wrapper-call-action"><!--équivaut au mileu -->
+    <div id="medium-wrapper">
+        <video class="home-video" autoplay loop>
+            <source src="assets/vids/sequence-introduction.mp4" type="video/mp4">
+            <source src="assets/vids/sequence-introduction.webm" type="video/webm">
+        </video>
+        <div id="hid-call" class="wrapper-call-action">
             <div id="hide-title" class="call-action">
-                <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at deleniti dicta
-                    eligendi est fuga nemo non nulla numquam obcaecati.
-                </h2>
+                <img src="assets/svg/titre.svg" alt="maxallix">
             </div>
-            <i class="fa fa-arrow-down arrow-down fa-2x" aria-hidden="true"></i>
+            <div class="arrow-down">
+                <img src="assets/svg/down.svg" alt="arrow">
+            </div>
 
         </div>
     </div>
 
 
-    <div id="small-wrap"><!--équivaut au front -->
+    <div id="small-wrap">
 
         <header id="nav-fix" class="home-header">
             <nav>
                 <a class="logo" href="index.php">
-                    <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 968 170.3"
                          xml:space="preserve">
                     <path d="M244.6,55.7c-2-4.9-4.4-12.2-5.6-17.3c-1.5,5.1-3.9,12.4-5.6,17.3l-19,51.1h48.9L244.6,55.7z M272.6,133h-67.4l-13.4,37.2
@@ -66,20 +68,19 @@ include 'inc/front-head-new.php';
 
         <div id="form-bigcontainer">
             <div class="form-container2" id="contact-form">
-                <form action="" method="post" class="container2" id="submit-form">
-                    <img src="assets/svg/cross-white.svg" class="contact-cross btn-close"  id="btn-close2" alt="cross">
-<!--                    <i class="fa fa-times contact-cross btn-close" id="btn-close2" aria-hidden="true"></i>-->
-                    <label for="contact-form" class="label-contact2">Par mail :</label>
+                <form action="#" method="post" class="container2" id="submit-form">
+                    <img src="assets/svg/cross-white.svg" class="contact-cross btn-close" id="btn-close2" alt="cross">
+                    <span class="label-contact2">Par mail :</span>
                     <input type="text" id="sujet" class="contact2" placeholder="Sujet">
                     <input type="email" id="mail" class="contact2" placeholder="e-mail">
                     <textarea name="message" id="message" class="contact2" cols="30" rows="9"
                               placeholder="Votre message..."></textarea>
                     <p><input type="submit" class="envoyer2" value="Envoyer" id="btn-envoyer"><span id="status"></span>
                     </p>
-                    <label for="" class="label-contact2"> ou par téléphone :<br>06 66 63 22 17</label>
+                    <span class="label-contact2"> ou par téléphone :<br>06 66 63 22 17</span>
                 </form>
             </div>
-            <div class="contact-background"></div>
+            <!--            <div class="contact-background"></div>-->
         </div>
 
         <?php
@@ -90,18 +91,22 @@ include 'inc/front-head-new.php';
                 <div class="mini-wrap">
                     <div class="bouton-titre-wrap">
                         <div class="bouton-titre">
-                            <img class="cross-infos-btn" src="assets/svg/plus.svg" alt="">
+                            <img class="cross-infos-btn" src="assets/svg/plus.svg" alt="infos">
                         </div>
                     </div>
                     <a href="project.php?id=<?php echo $projet['id']; ?>">
                         <img class="cover" src="<?= CHEMIN_IMAGE . $projet['cover'] ?>" alt="<?= $projet["titre"] ?>">
                     </a>
                     <div class="mask">
-
                         <a class="responsive-masklink" href="project.php?id=<?php echo $projet['id']; ?>"></a>
+                        <div class="project-infos">
+                            <h2 class="titre-projet"><?php echo $projet["titre"] ?></h2>
+                            <div class="quote"><p><?php echo nl2br($projet["quote"]) ?></p></div>
+                            <a class="bouton-go" href="project.php?id=<?php echo $projet['id']; ?>">
+                                <img class="go" src="assets/svg/go.svg" alt="go">
+                            </a>
+                        </div>
                     </div>
-
-
                 </div>
             <?php } ?>
             <?php

@@ -3,7 +3,7 @@
         <li class="footer-item footer-social">
             <ul>
                 <li class="footer-social-item">
-                    <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                         <g>
                             <path d="M18.7,16.9L18.7,16.9C18.6,16.9,18.7,16.9,18.7,16.9L18.7,16.9z M21.3,15.4c-1.5,0-2.2,0.8-2.6,1.4v-1.2h-2.9
@@ -36,7 +36,7 @@
                     </svg>
                 </li>
                 <li class="footer-social-item">
-                    <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                         <path d="M18,0C8,0,0,8.1,0,18s8.1,18,18,18s18-8.1,18-18S27.9,0,18,0z M19.9,24.2c-1.5,0-2.8-0.7-3.3-1.6c0,0-0.7,3-0.9,3.6
 	c-0.6,2-2.3,4-2.4,4.2c-0.1,0.1-0.3,0.1-0.3-0.1c-0.1-0.2-0.5-2.8,0-4.9l1.7-7c0,0-0.4-0.8-0.4-2c0-1.9,1.2-3.3,2.6-3.3

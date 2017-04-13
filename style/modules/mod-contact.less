@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh;
   position: fixed;
-  top: 4%;
+  top: 0;
   opacity: 0;
   z-index: -99;
   transition: opacity 0.1s ease-in-out;
@@ -24,8 +24,8 @@
 
 #form-bigcontainer.show {
   opacity: 1;
-  z-index: 100;
-
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /*----*/
@@ -78,7 +78,7 @@ input[type=text].contact2, input[type=email] {
   border: none;
 }
 
-label.label-contact2 {
+span.label-contact2 {
   color: @white;
   align-self: center;
   text-transform: uppercase;
@@ -89,6 +89,7 @@ label.label-contact2 {
   line-height: 150%;
   &:last-child {
     margin-bottom: 0;
+    pointer-events: none;
   }
 }
 
@@ -103,6 +104,10 @@ input[type=text].contact2, textarea.contact2:focus, input[type=email].contact2:f
 
 input[type=text].contact2:focus, textarea.contact2:focus, input[type=email].contact2:focus {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit].envoyer2:focus {
+ outline:none;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -134,41 +139,26 @@ input[type=text].contact2:focus, textarea.contact2:focus, input[type=email].cont
 }
 
 .envoyer2 {
-  margin-bottom: 20px;
-  cursor: pointer;
-  border: none;
-  color: #000000;
-  padding: 5px 10px;
-  background-color: #ffffff;
-  //width: 30%;
   align-self: center;
-  text-transform: uppercase;
+  border: none;
+  background-color: @white;
+  color: @black;
+  cursor: pointer;
+  //font-family: @light;
   font-size: 0.6rem;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  text-transform: uppercase;
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
   &:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
 }
 
-
-
-
-//i.contact-cross {
-//  align-self: flex-end;
-//  cursor: pointer;
-//  left: 364px;
-//  top: 2px;
-//  color: white;
-//  font-size: 0.95rem;
-//  transition:font-size 0.2s ease-in-out;
-//  &:hover {
-//    color: black;
-//  }
-//
-//}
 
 .nav-items.contact-btn {
   cursor:pointer;

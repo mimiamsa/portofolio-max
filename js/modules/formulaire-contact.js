@@ -12,7 +12,7 @@ define([""], function () {
     }
 
     function displayForm() {
-        log('yo');
+        log(form);
         form.classList.add("show");
         btnclose = selectAll('.btn-close');
         for(i=0; i < btnclose.length; i+=1 ){
